@@ -12,7 +12,7 @@ docker_build:
 	docker build \
   -f Dockerfile \
   -t hello-world-printer . \
-    /home/circleci/project
+    /home/circleci/project/half_dome
 docker_run: docker_build 
 
 	docker run --name hello-world-printer-dev -p 5000:5000 -d hello-world-printer 
